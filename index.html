@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Portfolio - Study Abroad Journey</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#3b82f6',
+secondary: '#1e40af'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=modern%20university%20campus%20with%20students%20walking%2C%20bright%20blue%20sky%2C%20contemporary%20architecture%2C%20academic%20atmosphere%2C%20clean%20minimalist%20design%2C%20professional%20lighting%2C%20education%20environment%2C%20study%20abroad%20concept&width=1920&height=800&seq=hero001&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex items-center justify-between h-16">
+<div class="text-xl font-semibold text-gray-900">Academic Portfolio</div>
+<div class="hidden md:flex space-x-8">
+<a href="#about" class="nav-link text-gray-600 hover:text-primary transition-colors">About</a>
+<a href="#academics" class="nav-link text-gray-600 hover:text-primary transition-colors">Academics</a>
+<a href="#research" class="nav-link text-gray-600 hover:text-primary transition-colors">Research</a>
+<a href="#talents" class="nav-link text-gray-600 hover:text-primary transition-colors">Talents</a>
+<a href="#leadership" class="nav-link text-gray-600 hover:text-primary transition-colors">Social Work</a>
+<a href="#projects" class="nav-link text-gray-600 hover:text-primary transition-colors">Projects</a>
+<a href="#awards" class="nav-link text-gray-600 hover:text-primary transition-colors">Awards</a>
+<a href="#contact" class="nav-link text-gray-600 hover:text-primary transition-colors">Contact</a>
+</div>
+<button class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="about" class="hero-bg relative min-h-screen flex items-center">
+<div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-transparent"></div>
+<div class="relative w-full max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-5 gap-16 items-center min-h-[80vh]">
+<div class="lg:col-span-3 space-y-8">
+<div class="space-y-6">
+<h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+Nguyễn Minh Tuấn
+</h1>
+<div class="space-y-5">
+<p class="text-lg lg:text-xl text-gray-700 font-medium">
+12th-grade student, Mathematics 1 class at Hanoi–Amsterdam High School for the Gifted
+</p>
+<p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+From an early age, I have nurtured an enduring passion for research, the pursuit of knowledge, and the discovery of new ideas. My greatest aspiration is to study at prestigious universities around the world and become a distinguished engineer who can contribute to addressing natural disasters and supporting people facing hardships in my homeland.
+</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 max-w-lg">
+<div class="bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl border border-gray-200 text-center">
+<span class="text-xs text-gray-600 block mb-1">Current GPA</span>
+<div class="text-xl lg:text-2xl font-bold text-primary">9.6</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl border border-gray-200 text-center">
+<span class="text-xs text-gray-600 block mb-1">IELTS Score</span>
+<div class="text-xl lg:text-2xl font-bold text-primary">7.5</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl border border-gray-200 text-center">
+<span class="text-xs text-gray-600 block mb-1">SAT Score</span>
+<div class="text-xl lg:text-2xl font-bold text-primary">1550</div>
+</div>
+</div>
+<button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap inline-block" onclick="downloadCV()">
+View Academic Portfolio
+</button>
+</div>
+<div class="lg:col-span-2 lg:flex justify-center items-center hidden">
+<div class="w-72 xl:w-80 h-80 xl:h-96 bg-white rounded-3xl shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/b05234c755e6f8f3ba0a8219ddecdcd3.png"
+alt="Student Portrait"
+class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Excellence Section -->
+<section id="academics" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Academic Excellence</h2>
+<p class="text-xl text-gray-600">Outstanding performance across all academic areas</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- GPA Cards -->
+<div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-500 rounded-xl mb-4">
+<i class="ri-graduation-cap-line text-white text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Grade 10 GPA</h3>
+<div class="text-3xl font-bold text-blue-600 mb-2">9.5</div>
+<div class="w-full bg-blue-200 rounded-full h-2">
+<div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl border border-green-200">
+<div class="w-12 h-12 flex items-center justify-center bg-green-500 rounded-xl mb-4">
+<i class="ri-trophy-line text-white text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Grade 11 GPA</h3>
+<div class="text-3xl font-bold text-green-600 mb-2">9.6</div>
+<div class="w-full bg-green-200 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width: 96%"></div>
+</div>
+</div>
+<!-- Standardized Tests -->
+<div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl border border-purple-200">
+<div class="w-12 h-12 flex items-center justify-center bg-purple-500 rounded-xl mb-4">
+<i class="ri-global-line text-white text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">IELTS Score</h3>
+<div class="text-3xl font-bold text-purple-600 mb-2">7.5</div>
+<p class="text-sm text-gray-600">Advanced English Proficiency</p>
+</div>
+<div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl border border-orange-200">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-500 rounded-xl mb-4">
+<i class="ri-book-open-line text-white text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">SAT Score</h3>
+<div class="text-3xl font-bold text-orange-600 mb-2">1550</div>
+<p class="text-sm text-gray-600">Top 1% Percentile</p>
+</div>
+</div>
+<!-- AP Courses -->
+<div class="mt-12">
+<h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Advanced Placement Courses</h3>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-lg font-semibold text-gray-900">AP Calculus BC</h4>
+<div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Score: 5</div>
+</div>
+<p class="text-gray-600">Advanced mathematical concepts including limits, derivatives, integrals, and series</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<div class="flex items-center justify-between mb-4">
+<h4 class="text-lg font-semibold text-gray-900">AP Computer Science A</h4>
+<div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Score: 5</div>
+</div>
+<p class="text-gray-600">Object-oriented programming, data structures, algorithms, and software design</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Awards Section -->
+<section id="awards" class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Honors & Awards</h2>
+<p class="text-xl text-gray-600">Recognition for innovation and academic excellence</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl mb-6">
+<i class="ri-trophy-fill text-white text-2xl"></i>
+</div>
+<div class="mb-4">
+<div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-3">Grand Prix Award</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Advanced Innovation Global Competition 2025</h3>
+</div>
+<h4 class="text-lg font-semibold text-gray-800 mb-3">AI-Powered Protective Gear Recognition System</h4>
+<p class="text-gray-600 mb-4">Developed an innovative AI system for construction site safety monitoring, ensuring workers wear proper protective equipment through real-time computer vision analysis.</p>
+<div class="mt-4">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/7c0a59a9203bf8121324e34ca210fed7.png"
+alt="Team celebrating Grand Prix Award at Advanced Innovation Global Competition 2025 in Singapore"
+class="w-full h-48 object-cover object-top rounded-xl shadow-lg">
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-green-400 to-green-600 rounded-2xl mb-6">
+<i class="ri-medal-fill text-white text-2xl"></i>
+</div>
+<div class="mb-4">
+<div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-3">Gold Medal</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">1 Idea 1 World 2025</h3>
+</div>
+<h4 class="text-lg font-semibold text-gray-800 mb-3">Smart Tree Monitoring System</h4>
+<p class="text-gray-600 mb-4">Created an IoT-based solution for urban tree management, monitoring tree health, growth patterns, and environmental conditions to optimize city green spaces.</p>
+<div class="mt-4 relative">
+<div class="idea-image-slider-container overflow-hidden rounded-xl shadow-lg">
+<div class="idea-image-slider flex transition-transform duration-500 ease-in-out" id="ideaSlider">
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/d35016b4c15012d06d56eb7e9d013a42.png"
+alt="Team presenting Smart Tree Monitoring System at 1 Idea 1 World 2025 competition"
+class="w-full h-48 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/207535edec2fa4be36150795822365d9.png"
+alt="Team working on Smart Tree Monitoring System development and testing"
+class="w-full h-48 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/d9a7dc97a5528684be5be49c4715b720.png"
+alt="Team members testing and implementing Smart Tree Monitoring System in field conditions"
+class="w-full h-48 object-cover object-top">
+</div>
+</div>
+</修改前>
+</div>
+<div class="flex justify-center mt-3 space-x-2">
+<button class="idea-slider-dot w-2.5 h-2.5 rounded-full bg-green-500 transition-all duration-300" data-slide="0"></button>
+<button class="idea-slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="1"></button>
+<button class="idea-slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="2"></button>
+</div>
+</修改前>
+<button class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300 opacity-0 hover:opacity-100" id="ideaPrevBtn">
+<i class="ri-arrow-left-s-line text-gray-700 text-lg"></i>
+</button>
+<button class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300 opacity-0 hover:opacity-100" id="ideaNextBtn">
+<i class="ri-arrow-right-s-line text-gray-700 text-lg"></i>
+</button>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-6">
+<i class="ri-award-fill text-white text-2xl"></i>
+</div>
+<div class="mb-4">
+<div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-3">Gold Medal</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">INOVA 2025 International Invention Show</h3>
+</div>
+<h4 class="text-lg font-semibold text-gray-800 mb-3">ECO SMART RAIL TRANSIT</h4>
+<p class="text-gray-600">Designed an AI-based railway safety monitoring system that enhances transportation safety through predictive analytics and real-time hazard detection.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Research Experience -->
+<section id="research" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Research Experience</h2>
+<p class="text-xl text-gray-600">Contributing to academic knowledge through innovative research</p>
+</div>
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 lg:p-12 rounded-2xl border border-blue-100">
+<div class="grid lg:grid-cols-3 gap-8 items-start">
+<div class="lg:col-span-1">
+<div class="w-20 h-20 flex items-center justify-center bg-blue-500 rounded-2xl mb-6">
+<i class="ri-research-line text-white text-3xl"></i>
+</div>
+<div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">Published Research</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2">IJSRM Publication</h3>
+<p class="text-lg text-blue-600 font-semibold mb-4">Applications and Impacts of Internet of Things (IoT) in Logistics Industry in Vietnam</p>
+</div>
+<div class="lg:col-span-2">
+<div class="space-y-6">
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Research Overview</h4>
+<p class="text-gray-700 leading-relaxed">
+Conducted an in-depth study on how IoT technologies are transforming Vietnam's logistics sector, focusing on applications such as real-time tracking, smart warehousing, predictive maintenance, and supply chain optimization.
+</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Key Findings</h4>
+<p class="text-gray-700 leading-relaxed">
+The research highlighted both opportunities and challenges, including cost efficiency, transparency, and operational resilience, while also addressing barriers like infrastructure readiness and data security. Findings emphasized IoT's potential to enhance the competitiveness of Vietnamese logistics firms in the context of Industry 4.0 and global trade integration.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">IoT Technology</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Logistics Industry</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Supply Chain</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Industry 4.0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Talents -->
+<section id="talents" class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Talents</h2>
+<p class="text-xl text-gray-600">Creative abilities and personal skills</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl mb-6">
+<i class="ri-music-2-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Guitar</h3>
+<p class="text-gray-600 leading-relaxed">Able to perform solo and in groups; uses music as a creative outlet.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mb-6">
+<i class="ri-presentation-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Public Speaking</h3>
+<p class="text-gray-600 leading-relaxed">Confident in presenting ideas and leading discussions.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl mb-6">
+<i class="ri-lightbulb-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Creative Thinking</h3>
+<p class="text-gray-600 leading-relaxed">Enjoys writing and solving problems with innovative approaches.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Work & Activities -->
+<section id="leadership" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Social Work & Activities</h2>
+<p class="text-xl text-gray-600">Community service and volunteer activities making a difference</p>
+</div>
+<div class="space-y-8">
+<!-- Ams Media Club -->
+<div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 lg:p-12 rounded-2xl border border-purple-100">
+<div class="grid lg:grid-cols-3 gap-8 items-start">
+<div class="lg:col-span-1">
+<div class="w-20 h-20 flex items-center justify-center bg-purple-500 rounded-2xl mb-6">
+<i class="ri-team-line text-white text-3xl"></i>
+</div>
+<div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">Media Club</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2">Ams Media Club</h3>
+<p class="text-lg text-purple-600 font-semibold mb-4">Logistics Team Member</p>
+</div>
+<div class="lg:col-span-2">
+<div class="space-y-6">
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Organizational Support</h4>
+<p class="text-gray-700 leading-relaxed">
+Served as a logistics team member for the Ams Media Club, supporting various media production activities and event coordination within the school community.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Team Collaboration</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Media Production</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Event Logistics</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SOS Children's Village -->
+<div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 lg:p-12 rounded-2xl border border-green-100">
+<div class="grid lg:grid-cols-2 gap-8 items-start">
+<div>
+<div class="w-20 h-20 flex items-center justify-center bg-green-500 rounded-2xl mb-6">
+<i class="ri-heart-3-line text-white text-3xl"></i>
+</div>
+<div class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">Community Service</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2">SOS Children's Village</h3>
+<p class="text-lg text-green-600 font-semibold mb-6">Volunteer Activities</p>
+<div class="space-y-6">
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Activity Organizer for 30+ Children</h4>
+<p class="text-gray-700 leading-relaxed">
+Organized traditional folk games, football sessions, art, and chess lessons for over 30 children to welcome the New Academic Year 2025/2026, creating engaging educational experiences for the young residents.
+</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Family Support Initiative</h4>
+<p class="text-gray-700 leading-relaxed">
+Visited and organized happy lunches for 8 SOS families at the village, fostering community bonds and providing meaningful social interaction for the families.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Child Development</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Event Organization</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Community Support</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Educational Activities</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="sos-image-slider-container overflow-hidden rounded-xl shadow-lg">
+<div class="sos-image-slider flex transition-transform duration-500 ease-in-out" id="sosSlider">
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/dbc7d1908e8936b09993f6edca86e113.png"
+alt="Volunteers participating in SOS Children's Village activities with children"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/bc77641b743667eb63cfef6786e35f9e.png"
+alt="Certificate presentation ceremony at SOS Children's Village volunteer program"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-4 space-x-2">
+<button class="sos-slider-dot w-3 h-3 rounded-full bg-green-500 transition-all duration-300" data-slide="0"></button>
+<button class="sos-slider-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="1"></button>
+</div>
+<button class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300" id="sosPrevBtn">
+<i class="ri-arrow-left-s-line text-gray-700 text-xl"></i>
+</button>
+<button class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300" id="sosNextBtn">
+<i class="ri-arrow-right-s-line text-gray-700 text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mùa Hè Xanh 2025 -->
+<div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 lg:p-12 rounded-2xl border border-blue-100">
+<div class="grid lg:grid-cols-2 gap-8 items-start">
+<div>
+<div class="w-20 h-20 flex items-center justify-center bg-blue-500 rounded-2xl mb-6">
+<i class="ri-hospital-line text-white text-3xl"></i>
+</div>
+<div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">Health Campaign</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2">Mùa Hè Xanh 2025</h3>
+<p class="text-lg text-blue-600 font-semibold mb-6">Youth Volunteer Campaign</p>
+<div class="space-y-6">
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Medical Care Volunteer - Che Tao Commune, Lao Cai</h4>
+<p class="text-gray-700 leading-relaxed">
+Participated in the "Mùa Hè Xanh 2025" Youth Volunteer Campaign in Che Tao Commune, Lao Cai Province, providing free medical care and distributing dental & digestive medicine to over 180 residents in underserved communities.
+</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">Healthcare Impact</h4>
+<p class="text-gray-700 leading-relaxed">
+Contributed to improving healthcare access in rural areas by supporting medical distribution and patient care, demonstrating commitment to social responsibility and community health initiatives.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Healthcare Volunteer</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Rural Community Service</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Medical Distribution</span>
+<span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">Social Impact</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="image-slider-container overflow-hidden rounded-xl shadow-lg">
+<div class="image-slider flex transition-transform duration-500 ease-in-out" id="slider">
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/39049f12ffaefcbb69ee5641779a3cfa.jpeg"
+alt="Mùa Hè Xanh 2025 Volunteer Campaign Group Photo"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/a0785f3b1396c1399b08827b8982554a.jpeg"
+alt="Volunteers distributing medical supplies during Mùa Hè Xanh 2025 campaign"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/bbed055bcb6d96b146fe1d99d8df2d66.jpeg"
+alt="Medical volunteer providing healthcare assistance to local community members during Mùa Hè Xanh 2025"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+<div class="w-full flex-shrink-0">
+<img src="https://static.readdy.ai/image/463e20087823e41977ed319075af2fbf/dc5bcf6b3b88fad1d81ff266c267bf97.jpeg"
+alt="Volunteer team delivering medical supplies and support materials during Mùa Hè Xanh 2025 campaign"
+class="w-full h-64 lg:h-80 object-cover object-top">
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-4 space-x-2">
+<button class="slider-dot w-3 h-3 rounded-full bg-blue-500 transition-all duration-300" data-slide="0"></button>
+<button class="slider-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="1"></button>
+<button class="slider-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="2"></button>
+<button class="slider-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-slide="3"></button>
+</div>
+<button class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300" id="prevBtn">
+<i class="ri-arrow-left-s-line text-gray-700 text-xl"></i>
+</button>
+<button class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 hover:bg-white rounded-full shadow-lg transition-all duration-300" id="nextBtn">
+<i class="ri-arrow-right-s-line text-gray-700 text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Personal Projects -->
+<section id="projects" class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Personal Projects</h2>
+<p class="text-xl text-gray-600">Innovative solutions addressing real-world challenges</p>
+</div>
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-0">
+<div class="p-8 lg:p-12">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-2xl mb-6">
+<i class="ri-shield-check-line text-white text-2xl"></i>
+</div>
+<div class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">AI & IoT Project</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">
+AI-Powered School Safety Monitoring System
+</h3>
+<p class="text-lg text-gray-600 mb-6 leading-relaxed">
+Designed and developed an AI-powered system aimed at enhancing school safety through real-time monitoring of student behavior and environmental hazards.
+</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1">
+<i class="ri-check-line text-green-600 text-sm"></i>
+</div>
+<p class="text-gray-700">Computer vision and machine learning integration for behavior analysis</p>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1">
+<i class="ri-check-line text-green-600 text-sm"></i>
+</div>
+<p class="text-gray-700">Real-time detection of unsafe actions and potential risks</p>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1">
+<i class="ri-check-line text-green-600 text-sm"></i>
+</div>
+<p class="text-gray-700">Instant alert system for school administrators</p>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mt-1">
+<i class="ri-check-line text-green-600 text-sm"></i>
+</div>
+<p class="text-gray-700">Hazard detection including overcrowding and unusual movements</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mb-6">
+<span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">Artificial Intelligence</span>
+<span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">Computer Vision</span>
+<span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">IoT Integration</span>
+<span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">Safety Systems</span>
+</div>
+<a href="https://www.canva.com/design/DAG1mFvhJR4/E2aWiraIKQvtUY6tiSKF0w/edit"
+target="_blank"
+rel="noopener noreferrer"
+class="inline-flex items-center bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap">
+<i class="ri-external-link-line text-lg mr-2"></i>
+View Project Details
+</a>
+</div>
+<div class="bg-gradient-to-br from-blue-100 to-indigo-100 p-8 lg:p-12 flex items-center">
+<img src="https://readdy.ai/api/search-image?query=AI%20monitoring%20system%20dashboard%2C%20school%20safety%20technology%2C%20computer%20vision%20interface%2C%20modern%20educational%20technology%2C%20security%20cameras%2C%20real-time%20monitoring%20display%2C%20clean%20tech%20interface%20design&width=600&height=400&seq=project001&orientation=landscape"
+alt="AI School Safety System"
+class="w-full h-auto rounded-xl shadow-lg object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Ready for the Next Chapter</h2>
+<p class="text-xl text-gray-600 mb-16">
+Seeking opportunities to pursue higher education abroad and contribute to innovative research in AI, IoT, and technology applications for social good.
+</p>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mx-auto mb-4">
+<i class="ri-mail-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-3">Email</h3>
+<a href="mailto:nguyenminhtuantaka@gmail.com" class="text-gray-600 hover:text-primary transition-colors text-sm break-all">nguyenminhtuantaka@gmail.com</a>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mx-auto mb-4">
+<i class="ri-phone-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-3">Phone</h3>
+<a href="tel:+84904641622" class="text-gray-600 hover:text-primary transition-colors">+84 904 641 622</a>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mx-auto mb-4">
+<i class="ri-map-pin-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-3">Location</h3>
+<p class="text-gray-600">Hanoi, Vietnam</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mx-auto mb-4">
+<i class="ri-facebook-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-3">Social Media</h3>
+<a href="https://www.facebook.com/nguyen.minh.tuan.383731/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary transition-colors">Facebook Profile</a>
+</div>
+</div>
+<button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap" onclick="downloadCV()">
+Download Academic CV
+</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<p class="text-gray-400 mb-4">
+© 2025 Academic Portfolio. Dedicated to excellence in education and innovation.
+</p>
+<p class="text-sm text-gray-500">
+Pursuing higher education opportunities • Research-focused • Innovation-driven
+</p>
+</div>
+</footer>
+<script id="navigation-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetSection = document.getElementById(targetId);
+if (targetSection) {
+const offsetTop = targetSection.offsetTop - 80;
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="active-navigation">
+document.addEventListener('DOMContentLoaded', function() {
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+function updateActiveNav() {
+const scrollPos = window.scrollY + 100;
+sections.forEach(section => {
+const top = section.offsetTop;
+const bottom = top + section.offsetHeight;
+const id = section.getAttribute('id');
+if (scrollPos >= top && scrollPos < bottom) {
+navLinks.forEach(link => {
+link.classList.remove('text-primary');
+link.classList.add('text-gray-600');
+if (link.getAttribute('href') === `#${id}`) {
+link.classList.remove('text-gray-600');
+link.classList.add('text-primary');
+}
+});
+}
+});
+}
+window.addEventListener('scroll', updateActiveNav);
+updateActiveNav();
+});
+</script>
+<script id="image-slider">
+document.addEventListener('DOMContentLoaded', function() {
+const slider = document.getElementById('slider');
+const dots = document.querySelectorAll('.slider-dot');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+let currentSlide = 0;
+const totalSlides = 4;
+function updateSlider() {
+const translateX = -currentSlide * 100;
+slider.style.transform = `translateX(${translateX}%)`;
+dots.forEach((dot, index) => {
+if (index === currentSlide) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-blue-500');
+} else {
+dot.classList.remove('bg-blue-500');
+dot.classList.add('bg-gray-300');
+}
+});
+}
+function nextSlide() {
+currentSlide = (currentSlide + 1) % totalSlides;
+updateSlider();
+}
+function prevSlide() {
+currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+updateSlider();
+}
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+dots.forEach((dot, index) => {
+dot.addEventListener('click', function() {
+currentSlide = index;
+updateSlider();
+});
+});
+setInterval(nextSlide, 5000);
+});
+</script>
+<script id="sos-image-slider">
+document.addEventListener('DOMContentLoaded', function() {
+const sosSlider = document.getElementById('sosSlider');
+const sosDots = document.querySelectorAll('.sos-slider-dot');
+const sosPrevBtn = document.getElementById('sosPrevBtn');
+const sosNextBtn = document.getElementById('sosNextBtn');
+let sosCurrentSlide = 0;
+const sosTotalSlides = 2;
+function updateSosSlider() {
+const translateX = -sosCurrentSlide * 100;
+sosSlider.style.transform = `translateX(${translateX}%)`;
+sosDots.forEach((dot, index) => {
+if (index === sosCurrentSlide) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-green-500');
+} else {
+dot.classList.remove('bg-green-500');
+dot.classList.add('bg-gray-300');
+}
+});
+}
+function sosNextSlide() {
+sosCurrentSlide = (sosCurrentSlide + 1) % sosTotalSlides;
+updateSosSlider();
+}
+function sosPrevSlide() {
+sosCurrentSlide = (sosCurrentSlide - 1 + sosTotalSlides) % sosTotalSlides;
+updateSosSlider();
+}
+sosNextBtn.addEventListener('click', sosNextSlide);
+sosPrevBtn.addEventListener('click', sosPrevSlide);
+sosDots.forEach((dot, index) => {
+dot.addEventListener('click', function() {
+sosCurrentSlide = index;
+updateSosSlider();
+});
+});
+setInterval(sosNextSlide, 6000);
+});
+</script>
+<script id="idea-image-slider">
+document.addEventListener('DOMContentLoaded', function() {
+const ideaSlider = document.getElementById('ideaSlider');
+const ideaDots = document.querySelectorAll('.idea-slider-dot');
+const ideaPrevBtn = document.getElementById('ideaPrevBtn');
+const ideaNextBtn = document.getElementById('ideaNextBtn');
+let ideaCurrentSlide = 0;
+const ideaTotalSlides = 3;
+function updateIdeaSlider() {
+const translateX = -ideaCurrentSlide * 100;
+ideaSlider.style.transform = `translateX(${translateX}%)`;
+ideaDots.forEach((dot, index) => {
+if (index === ideaCurrentSlide) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-green-500');
+} else {
+dot.classList.remove('bg-green-500');
+dot.classList.add('bg-gray-300');
+}
+});
+}
+function ideaNextSlide() {
+ideaCurrentSlide = (ideaCurrentSlide + 1) % ideaTotalSlides;
+updateIdeaSlider();
+}
+function ideaPrevSlide() {
+ideaCurrentSlide = (ideaCurrentSlide - 1 + ideaTotalSlides) % ideaTotalSlides;
+updateIdeaSlider();
+}
+ideaNextBtn.addEventListener('click', ideaNextSlide);
+ideaPrevBtn.addEventListener('click', ideaPrevSlide);
+ideaDots.forEach((dot, index) => {
+dot.addEventListener('click', function() {
+ideaCurrentSlide = parseInt(this.getAttribute('data-slide'));
+updateIdeaSlider();
+});
+});
+setInterval(ideaNextSlide, 7000);
+});
+</script>
+<script id="download-cv">
+function downloadCV() {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = 'minhtuan_cv.pdf';
+    link.download = 'minhtuan_cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+</body>
+</html>
